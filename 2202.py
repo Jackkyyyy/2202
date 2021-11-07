@@ -64,9 +64,8 @@ image_members = []
 latitude_list=[]
 longitude_list=[]
 for filename in os.listdir("/home/deeplearning/sus"):
-#for filename in os.listdir("ProjectImage"):
+
     with open("/home/deeplearning/sus/" + filename, "rb") as filename:
-    #with open("ProjectImage/" + filename, "rb") as filename:
         filename = Image(filename)
     images.append(filename)
     image_members.append(dir(filename))
